@@ -1,13 +1,13 @@
-
+sm
 function theBeatlesPlay(musiciansArray, instrumentsArray){
   var newArray = [];
-  /**/for (var i = 0; i < musiciansArray.length; i++)
+  for (var i = 0; i < musiciansArray.length; i++)
   {
-    /*for (var g = 0; g < instrumentsArray.length; g++)
-    {*/
+    for (var g = 0; g < instrumentsArray.length; g++)
+    {
       var newString = musiciansArray[i] + " plays " + instrumentsArray[i];
       newArray[newArray.length] = newString;
-    /* } */
+     } 
   }
   return newArray;
  }
@@ -28,6 +28,9 @@ function iLoveTheBeatles(number){
 // tried sameArray = sameArray.push(`I love the Beatles!`);
 //but it didn't work
  sameArray.push(`I love the Beatles!`);
+//=======
+ sameArray = sameArray + `I love the Beatles!` + ", ";
+//>>>>>>> d75288eb4c2afbb7147bc0e49f70e753576b0790
  number = number + 1;
  i++;
   }
